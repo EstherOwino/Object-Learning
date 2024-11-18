@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+        <script>
+            const product={
+                name: 'basketball',
+                price: 2095
+            };
+            console.log(product);
+            product.price=2095+500;
+            console.log(product.price);
+            product['delivery-time']='3 days';
+            console.log(product);
+
+            const product1={
+                name: 'sunglasses',
+                price: 1560
+            };
+            const product2={
+                name: 'sneakers',
+                price: 3390
+            };
+
+            function comparePrice(product1,product2){
+                if(product1.price > product2.price){
+                    console.log(product2);
+                }
+                else{
+                    console.log(product1);
+                }
+            }
+            comparePrice(product1,product2);
+
+            function isSameProduct(product1,product2){
+                if(product1.name === product2.name && product1.price === product2.price){
+                    console.log(true);
+                }
+                else{
+                    console.log(false);
+                }
+            }
+            isSameProduct(product1,product2);
+
+            console.log('Good Morning'.toLowerCase());
+
+            console.log('test'.repeat(2));
+        </script>
+    </body>
+</html>
